@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'inter', sans-serif;
+}
+
+/* Styles */
+
+h1, h2 {
+    margin: 0
+}
+
+.quote-contents__text {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.quote-contents__author {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: end;
+}
+
+img {
+    width: 100%;
+}
+
+.quote__bg-image {
+    height: 480px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Layouts */
+
+.main {
+    padding: 5rem 2rem;
+}
+
+.quote-container {
+    max-width: 720px;
+    min-width: 300px;
+    height: 480px;
+    position: relative;
+    margin: 0 auto;
+    border: 5px solid #fff;
+    border-radius: 1.125rem;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3)
+}
+
+.quote-container:nth-child(2),
+.quote-container:nth-child(3),
+.quote-container:nth-child(4) {
+    margin-block: 3rem;
+}
+
+.quote-contents {
+    background-color: #fff;
+    opacity: .9;
+    width: 60%;
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    
+    position: absolute;
+    top: 4.25rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 1.75rem 2rem;
+}
